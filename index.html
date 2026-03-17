@@ -6,13 +6,13 @@
   <title>Demo DEV Environment</title>
   <style>
     :root {
-      --bg: #f4f8fb;
-      --card: #ffffff;
-      --text: #0f172a;
-      --muted: #475569;
-      --accent: #0ea5e9;
-      --ok: #10b981;
-      --border: #dbeafe;
+      --bg: #f6ebe4;
+      --card: #fffaf6;
+      --text: #3a231b;
+      --muted: #7a5a4c;
+      --accent: #c96f4d;
+      --ok: #b85c3a;
+      --border: #e7c7b6;
     }
 
     * {
@@ -24,8 +24,8 @@
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 20% 20%, #e0f2fe, transparent 30%),
-        radial-gradient(circle at 80% 10%, #d1fae5, transparent 35%),
+        radial-gradient(circle at 20% 20%, #f3d5c8, transparent 32%),
+        radial-gradient(circle at 80% 10%, #eab39c, transparent 36%),
         var(--bg);
       min-height: 100vh;
       display: grid;
@@ -39,15 +39,15 @@
       border: 1px solid var(--border);
       border-radius: 16px;
       padding: 28px;
-      box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+      box-shadow: 0 12px 32px rgba(120, 64, 41, 0.14);
     }
 
     .badge {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      background: #e0f2fe;
-      color: #075985;
+      background: #f3ddd3;
+      color: #7b3f2a;
       border-radius: 999px;
       padding: 8px 12px;
       font-size: 13px;
@@ -84,7 +84,7 @@
     }
 
     code {
-      background: #f1f5f9;
+      background: #f4e2d9;
       padding: 2px 6px;
       border-radius: 6px;
     }
@@ -94,6 +94,7 @@
   <main class="card">
     <span class="badge"><span class="dot"></span> DEV Environment</span>
     <h1>House of Health Demo - DEV</h1>
+    <p>Terracotta theme enabled for DEV preview.</p>
     <p>This page is deployed from the <code>demo</code> repository <code>dev</code> branch.</p>
     <p>Update this file and push to <code>dev</code> to verify your deployment pipeline.</p>
 
