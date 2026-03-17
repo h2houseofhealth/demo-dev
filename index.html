@@ -2,10 +2,106 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>DEV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Demo DEV Environment</title>
+  <style>
+    :root {
+      --bg: #f4f8fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #0ea5e9;
+      --ok: #10b981;
+      --border: #dbeafe;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 20% 20%, #e0f2fe, transparent 30%),
+        radial-gradient(circle at 80% 10%, #d1fae5, transparent 35%),
+        var(--bg);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #e0f2fe;
+      color: #075985;
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--ok);
+    }
+
+    h1 {
+      margin: 16px 0 8px;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.1;
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .meta {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px dashed #cbd5e1;
+      display: grid;
+      gap: 8px;
+      font-size: 14px;
+      color: #334155;
+    }
+
+    code {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+  </style>
 </head>
 <body>
-  <h1>This is from DEV</h1>
+  <main class="card">
+    <span class="badge"><span class="dot"></span> DEV Environment</span>
+    <h1>House of Health Demo - DEV</h1>
+    <p>This page is deployed from the <code>demo</code> repository <code>dev</code> branch.</p>
+    <p>Update this file and push to <code>dev</code> to verify your deployment pipeline.</p>
+
+    <section class="meta">
+      <div><strong>Source Repo:</strong> h2houseofhealth/demo</div>
+      <div><strong>Target Repo:</strong> h2houseofhealth/demo-dev (gh-pages)</div>
+      <div><strong>Status:</strong> Ready for DEV testing</div>
+    </section>
+  </main>
 </body>
 </html>
